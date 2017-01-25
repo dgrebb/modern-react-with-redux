@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+
+// TODO: Documentation
 class SearchBar extends Component {
 
     constructor( props ) {
@@ -13,10 +15,11 @@ class SearchBar extends Component {
         return (
             <div>
               <input
+                value={this.state.term}
                 onChange={e => this.setState({ term: e.target.value })}
               />
-            <p>Input Value: {this.state.term}</p>
             </div>
+
         )
     }
 }
